@@ -18,7 +18,7 @@ import {
     TableContainer,
 } from '@chakra-ui/react';
 import TasksSkeleton from '../_skeletons/TasksSkeleton';
-import Pagination from '../components/pagination';
+import Pagination from '../components/Pagination';
 import { BsArrowUp } from 'react-icons/bs';
 
 export default function Tasks() {
@@ -50,7 +50,6 @@ export default function Tasks() {
         searchParams.set('orderDirection', newDirection);
         setSearchParams(searchParams);
     };
-
 
     useEffect(() => {
         const fetchTasks = async () => {
